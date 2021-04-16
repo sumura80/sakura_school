@@ -1,0 +1,865 @@
+/* Template Name: Sakura cram School
+Author: Susumu
+Description: This is a template for sakura cram school
+Version: 1.0.0 */
+
+
+:root{
+  --blue-color: #4555F4;
+  --light-blue-color:#3d93c9;
+  --orange-color: #FF994E;
+  --pink-color:#FF8686;
+  --light-pink-color:#FFACCA;
+  --gray-color:#707070;
+  --light-gray-color: #BEBEBE;
+  --black-color:#121212;
+  --green-color:#39A345;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* トップページ */
+.container{
+  max-width: 1200px;
+  margin-right:auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.flex{
+  display: flex;
+}
+.header-right{
+  display: flex;
+}
+.trial-btn{
+  margin-left: 30px;
+}
+.trial-btn a{
+ color:#FFF;
+ background-color: var(--orange-color);
+ padding: 15px;
+ text-decoration: none;
+ display: block;
+ box-shadow: 2px 2px 0px #bd6d35;
+}
+.trial-btn a:hover{
+  color:var(--blue-color);
+  background-color: #fda363;
+ }
+ .hour-info{
+   font-size: 0.8em;
+   color: var(--gray-color);
+ }
+ .phone-info{
+   font-size: 1.6em;
+ }
+.top-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo-name{
+  text-decoration: none;
+  color: var(--pink-color);
+}
+
+.site-nav ul{
+  justify-content: space-around;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.site-nav li{
+  width:280px;
+  border-right: 1px solid #cecece;
+}
+
+.site-nav li:last-child{
+  border-right: none;
+}
+.site-nav a{
+  display: block;
+  text-decoration: none;
+  /* color:#333; */
+  color:var(--light-blue-color);
+  padding: 15px;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.site-nav a:hover{
+ color: var(--blue-color);
+ 
+}
+
+.header-logo h1{
+  font-size: 2em;
+  color:var(--pink-color);
+}
+
+.home-banner img{
+  width:100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.classBoxes{
+  margin-top: 60px;
+  justify-content: space-between;
+  display: flex;
+  max-width: 1100px;
+  padding: 0 30px;
+}
+
+.elementaryBox{
+  padding: 30px 10px;
+  width: 30%;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--light-pink-color);
+  box-shadow: 1px 2px 3px #e77ea4;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color:#FFF;
+}
+
+.juniorHighBox{
+  padding: 30px 10px;
+  width: 30%;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--orange-color);
+  box-shadow: 1px 2px 3px #dca25b;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color:#FFF;
+}
+
+.highSchoolBox{
+  padding: 30px 10px;
+  width: 30%;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--green-color);
+  box-shadow: 1px 2px 3px #12781e;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color:#FFF;
+}
+
+.callInfoWrap{
+  margin-top: 100px;
+  max-width: 750px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.callInfoWrap table{
+  border-collapse: collapse;
+}
+
+.callTitle{
+  font-size: 1.4em;
+  padding: 30px;
+  background-color:var(--light-blue-color) ;
+  color:#FFF;
+  width: 30%;
+}
+.callNum{
+  font-size: 2.4em;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.callTime{
+ font-size: 18px;
+ font-weight: normal;
+}
+
+.reasonWrap{
+  margin-top: 100px;
+  max-width: 1000px;
+
+}
+.reasonTitle h2{
+  text-align: center;
+  font-size: 2em;
+}
+.sakura{
+  color:var(--pink-color);
+  font-weight: bold;
+}
+.blue{
+  color:var(--blue-color);
+  font-weight: bold;
+}
+.reasonBoxes{
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+.reasonBoxes img{
+  width: 100%;
+  border-bottom: 1px solid var(--gray-color);
+}
+.reason-head{
+  text-align: center;
+  color:var(--blue-color);
+  font-size: 1.6em;
+}
+.reasonBox{
+  width: 96%;
+  border: 1px solid #BEBEBE;
+  margin:5px;
+}
+.reasonContent{
+  padding: 0 30px;
+}
+
+.reasonBox a{
+  display: block;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: var(--gray-color);
+}
+
+.reasonBox a:hover{
+  color: var(--light-blue-color);
+}
+.news {
+margin-top: 100px;
+}
+.newsTitle{
+  text-align: center;
+  font-size: 2em;
+}
+.newsData{
+  max-width: 720px;
+  margin: 0 auto;
+  border: 1px solid var(--light-blue-color);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.newsData a{
+  text-decoration: none;
+}
+dt{
+  float: left;
+  
+}
+dd{
+  margin-bottom: 30px;
+}
+
+dt::after{
+  content: "："
+}
+.newsList{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--orange-color);
+  width: 300px;
+  padding: 10px;
+  font-size: 1.0em;
+  color: #FFF;
+  border-radius: 5px;
+  margin-top: 50px;
+  text-decoration: none;
+}
+.newsList:hover{
+  color:var(--blue-color);
+  background-color: #f39857;
+}
+.mapLocation{
+  margin-top: 100px;
+ 
+}
+.mapTitle{
+  font-size: 2em;
+  border-left: 10px solid var(--light-gray-color);
+  padding-left: 10px;
+}
+.mapAddress{
+  color:var(--light-gray-color);
+}
+
+
+/* Footer page  */
+.site-footer{
+  background-color: var(--gray-color);
+  height: 260px;
+}
+.site-footer-wrap{
+  display: flex;
+  padding: 60px;
+  margin-top: 60px;
+}
+
+.site-footer-wrap a{
+  text-decoration: none;
+  color:#FFF;
+  padding-top: 15px;
+}
+.left-footer{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.left-footer a{
+  width: 50%;
+}
+
+.right-footer{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.right-footer a{
+  width: 50%;
+}
+
+.footer-bottom{
+ color: #FFF;
+ background-color: #121212;
+ padding: 30px 30px 30px 60px;
+}
+
+.footer-bottom-items{
+  display: flex;
+}
+.footer-bottom-items a{
+  color: #FFF;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+.site-footer a:hover{
+  color: var(--light-pink-color);
+}
+
+/* 個別指導ページ */
+.privateLessonTitle{
+  background-color: rgb(238, 238, 238);
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.privateLessonTitle h2{
+  padding: 15px;
+} 
+.elementaryTitle{
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.elementaryWrap{
+  padding-top: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+.elementaryHead{
+  font-size: 1.4em;
+}
+.elementaryContent{
+  padding-top: 10px;
+}
+.elementaryLeft{
+  width: 60%;
+  margin: 0 15px;
+}
+.elementaryRight{
+  width: 35%;
+}
+.elementaryImg img{
+  max-width: 100%;
+}
+
+.juniorWrap{
+  margin-top: 60px;
+  max-width: 900px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.juniorTitle{
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.juniorHead{
+  font-size: 1.4em;
+}
+
+.juniorContent{
+  padding-top: 10px;
+}
+
+.juniorLeft{
+  width: 60%;
+  margin: 0 15px;
+}
+
+.juniorRight{
+  width: 35%;
+}
+
+.juniorImg img{
+  max-width: 100%;
+}
+
+.horizontalLine{
+  border-bottom: 20px dotted var(--light-blue-color);
+  opacity: 0.2;
+  margin-top: 60px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.highWrap{
+  margin-top: 60px;
+  max-width: 900px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.highTitle{
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.highHead{
+  font-size: 1.4em;
+}
+
+.highContent{
+  padding-top: 10px;
+}
+
+.highLeft{
+  width: 60%;
+  margin: 0 15px;
+}
+
+.highRight{
+  width: 35%;
+}
+
+.highImg img{
+  max-width: 100%;
+}
+
+
+/* 料金案内 */
+.tuitionWrap{
+  max-width: 800px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+}
+.tuitionInfo{
+  width: 60%;
+}
+.tuitionTitle{
+  font-size: 2em;
+  color: var(--light-blue-color);
+  border-left: 5px solid var(--light-blue-color);
+  padding-left: 10px;
+}
+.tuitionImg{
+  width: 35%;
+}
+.tuitionImg img{
+  width: 100%;
+}
+.tuitionContent{
+  padding-top: 15px;
+}
+
+.tuitionTable{
+  max-width: 700px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tuitionTable table{
+  border-collapse: collapse;
+  width: 100%;
+  padding: 30px;
+}
+
+.tuitionTable  th{
+font-size: 1.4em;
+padding: 10px 10px;
+background-color: #b6d5f7;
+}
+.tuitionTable  td{
+  font-size: 1.5em;
+ text-align: center;
+ padding: 20px 0;
+  }
+
+.tuitionNote{
+  margin-top: 20px;
+}
+
+/* お問い合わせフォーム */
+.contactFormWrap{
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 60px;
+}
+.formTitle{
+  background-color: var(--light-blue-color);
+  color:#FFF;
+  padding: 15px;
+}
+.myname{
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+.myname p{
+  margin: -20px;
+}
+.nameinput{
+  width:60%;
+  height: 30px;
+}
+.messageWrap{
+  font-size: 1.4em;
+  margin-top: 15px;
+}
+.messageWrap p{
+  margin: -20px;
+}
+
+
+.emailWrap{
+  font-size: 1.4em;
+  margin-top: 15px;
+}
+.emailWrap p{
+  margin: -20px;
+}
+.emailinput{
+  height: 30px;
+  width:60%;
+}
+
+.send_btn{
+  color: #fff;
+  background-color: var(--orange-color);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0px #bd6d35;
+  cursor: pointer;
+}
+.send_btn:hover{
+  color: var(--blue-color);
+  box-shadow:none;
+}
+.tableWrapping{
+  border: 1px solid var(--light-blue-color);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Newｓ　お知らせページ */
+.newsWrap{
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 30px;
+  max-width: 700px;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+}
+
+/* News Archiveページ */
+.newsArchiveWrap{
+  max-width: 700px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.newsArchiveWrap h2{
+  color: var(--gray-color);
+  font-size: 2em;
+  border-left: 10px solid var(--light-gray-color);
+  padding-left: 15px;
+}
+
+.newsArciveTitle{
+  font-size: 1.2em;
+  padding-bottom: 25px;
+  margin-top: 10px;
+}
+.newsArciveTitle a{
+text-decoration: none;
+}
+
+.trialFreeBtn{
+  margin-top: 120px;
+  text-align: center;
+ }
+ .trialFreeBtn a{
+   text-decoration: none;
+   background-color: var(--light-blue-color);
+   font-size: 1.6em;
+   color:#FFF;
+   border-radius: 5px;
+   padding: 25px 80px;
+   box-shadow: 0 5px 0 #255B7E;
+ }
+
+ .trialFreeBtn a:hover{
+   box-shadow: none;
+   position: relative;
+   top: 6px;
+   background-color: #509dce;
+ }
+ .site-nav-list li a:hover{
+  background-color: #88cefa;
+  color: #FFF;
+}
+
+/* ========= Media Query ============ */
+@media screen and (max-width: 426px) {
+  /* 426pxまでの幅の場合に適応される */
+  .reasonBoxes{
+    flex-direction: column;
+  }
+  .reasonBox{
+    margin-bottom: 30px;
+  }
+.left-footer a{
+  width: 150px;
+}
+.right-footer{
+  width: 150px;
+
+}
+.right-footer a{
+  padding-left: 60px;
+}
+
+
+.callNum{
+  font-size: 1.2em;
+}
+.callTime{
+  font-size: 12px;
+}
+.callTitle{
+  font-size: 10px; }
+.callInfoWrap th{
+  padding: 5px;
+}
+.hour-info, .phone-info{
+  display:none
+}
+.home-banner img{
+  height: 200px;
+}
+.newsList{
+  width: 90%;
+}
+
+.footer-bottom-items{
+  display: flex;
+  flex-direction: column;
+}
+.footer-bottom-items a{
+  padding-bottom: 15px;
+}
+
+.trial-btn a{
+  display: none;
+}
+
+.privateLessonTitle{
+  width: 90%;
+}
+.privateLessonTitle h2{
+  font-size: 1.2em;
+}
+
+.elementaryWrap{
+  flex-direction: column;
+
+}
+.elementaryLeft{
+  width:90%;
+}
+.elementaryRight{
+  width:100%;
+}
+.elementaryContent{
+  margin-bottom: 15px;
+}
+
+.juniorWrap{
+  flex-direction: column;
+}
+.juniorLeft{
+  width: 90%;
+}
+.juniorRight{
+  width:100%;
+}
+.juniorContent{
+  margin-bottom: 15px;
+}
+
+.highWrap{
+  flex-direction: column;
+}
+.highLeft{
+  width: 90%;
+}
+.highRight{
+  width:100%;
+}
+.highContent{
+  margin-bottom: 15px;
+}
+
+.tuitionWrap{
+  flex-direction: column;
+}
+
+.tuitionImg img {
+  width: 300px;
+}
+
+/* お問い合わせ */
+.nameinput{
+width: 100%;
+}
+
+.emailinput{
+  width: 100%;
+  }
+.messageBox{
+  width: 100%;
+}
+.send_btn{
+  width: 100%;
+}
+.newsTitle{
+  margin-top: -80px;
+}
+.trialFreeBtn{
+  font-size: .7em;  
+}
+
+
+.site-nav-list{
+  display: block;
+  padding-left: 0px;
+  width: 100%;
+}
+
+.site-nav-list li{
+padding: none;
+  border-right: none;
+  width: 100%;
+  display: block;
+  border-bottom: #cecece;
+  
+}
+.site-nav-list li a{
+    border-bottom: 1px solid #cecece;
+  }
+
+  .site-nav li:first-child a{
+    border-top: 1px solid #cecece;
+  }
+
+.menu-toggle::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c9";
+  color: #121212;
+  font-weight: 900;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.menu-toggle.active::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00d";
+  color: #121212;
+  font-weight: 900;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.header-right{
+  display: block;
+}
+nav {
+  display: none;
+}
+nav.active {
+  display: block;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+  /* 768pxまでの幅の場合に適応される */
+
+.classBoxes{
+    margin:0;
+    margin-top: 40px;
+    padding: 0;
+  }
+.classBox{
+  margin-right: 5%;
+}
+
+
+.reasonTitle h2{
+  font-size: 1.7em;
+}
+.site-nav-list a{
+  font-size: 1.2em;
+}
+
+
+.horizontalLine{
+  width: 100%;
+  margin-right: 120px;
+
+}
+  }
+
+
+
